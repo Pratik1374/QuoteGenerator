@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(239, 248, 188);
+}
+
+.quote{
+    border: 2px solid black;
+    width: 300px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 460px;
+    font-size: xx-large;
+    padding-left: 20px;
+    padding-right: 20px;                                         
+    color: rgb(53, 207, 64);
+    background-color: rgb(0, 0, 0);               
+    border-radius: 30px;
+}
+#generator{
+    display: inline;
+    margin-left: 435px;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: large;
+    color: rgb(82, 0, 109);
+    background-color: rgb(5, 169, 133);
+    border-radius: 10px;
+    
+}
+#generator:hover{
+    box-shadow: 0 0 4px 2px rgb(176, 3, 3);                /*x-offset y-offset blur spread color; */   
+    cursor: pointer;
+    background-color: rgb(255, 254, 181);
+}
+#content{
+    height: 200px;
+    width: 800px;
+    margin-top: 50px;
+    margin-left: 200px;
+    border: 2px solid black;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: linear-gradient(rgb(19, 1, 82),rgb(141, 254, 248),rgb(141, 254, 248),rgb(19, 1, 82));
+    color: black;
+    border-radius: 50%;   
+}
+
+.circle1{
+    position: relative;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation-name: example1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example1 {
+    from {top: 0px;}
+    to {top: 270px; background-color: rgb(255, 0, 238);}
+    
+}
+
+.circle2{
+    margin-left: 400px;
+    position: relative;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation-name: example2;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0.8;
+}
+
+@keyframes example2 {
+    from {top: 270px;}
+    to {top: 0px; background-color: rgb(255, 0, 238);}
+    
+}
